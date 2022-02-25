@@ -44,8 +44,11 @@
       smoothTolerance=".01"
       smoothThreshold="5"
     >
+      <video id="vid" src="videoplay10s.mp4" playsinline webkit-playsinline muted>
+        </video>
       <a-entity
-        gltf-model="./videoplay10s.mp4"
+         <a-video id="aVideoHide" src="#vid" position="-9 9 9" rotation="-90 0 0" height="6px" width="6px"
+                material="shader: chromakey; color: 0.1 0.9 0.2"></a-video>
         scale="1 1 1"
         position="60 150 -1"
                 rotation=" 90 0 0"
