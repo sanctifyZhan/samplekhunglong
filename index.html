@@ -29,7 +29,7 @@ AFRAME.registerComponent('videohandler', {
                 this.vid = document.querySelector("#vid");
                 marker.addEventListener('markerFound', function () {
                   this.vid.play();
-                   this.vid.muted = true;
+                  // this.vid.muted = true;
               }.bind(this));
       
               marker.addEventListener('markerLost', function() {
@@ -62,7 +62,7 @@ AFRAME.registerComponent('videohandler', {
       smoothThreshold="5"
     >
       
-      <video id="vid" src="videoplayback.mp4" playsinline webkit-playsinline muted>
+      <video id="vid" src="videoplayback.mp4" playsinline webkit-playsinline>
         </video>
     
    
