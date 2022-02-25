@@ -29,6 +29,7 @@ AFRAME.registerComponent('videohandler', {
                 this.vid = document.querySelector("#vid");
                 marker.addEventListener('markerFound', function () {
                   this.vid.play();   
+                  this.vid.muted = !video.muted;
                  // this.vid.muted = false;
               }.bind(this));
       
@@ -62,7 +63,7 @@ AFRAME.registerComponent('videohandler', {
       smoothThreshold="5"
     >
       
-      <video id="vid" src="videoplayback.mp4" autoplay controls [muted]="'muted'">
+      <video id="vid" src="videoplayback.mp4" autoplay controls muted>
         </video>
     
    
